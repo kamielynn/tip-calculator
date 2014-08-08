@@ -13,4 +13,4 @@
   var total = subtotal * (parseFloat(tip) / 100) + subtotal;
 	console.log (total);
 
-  alert("cost: $" + (cost) + "\n" + "tax: $" + (tax / 100).toFixed(2) + "\n" + "tip: $" + (tip / 100).toFixed(2) + "\n" +"___________________________" + "\n" + "total: $" + (total).toFixed(2) ); 
+  alert("cost: $" + (cost) + "\n" + "tax: " + (tax / 100).toFixed(2) + "% \n" + "tip: " + (tip / 100).toFixed(2) + "% \n" +"___________________________" + "\n" + "total: $" + (total).toFixed(2) ); 
