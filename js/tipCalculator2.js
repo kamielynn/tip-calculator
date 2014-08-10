@@ -1,19 +1,22 @@
 
-  // On page load prompt “How much was your meal?”
-  var cost = prompt("How much was your meal?");
-  // Save input as cost var
-  var taxRate = prompt("What is the tax rate?");
-  // Save input as tax
-  var tipPercent = prompt("What percentage would you like to tip?");
-  // Save input as tip
+window.onload=function(){
 
-  var tax = parseFloat(cost) * (parseFloat(taxRate) / 100);
+  // prompt inputs from user and assign variables”
+  var cost = parseFloat(prompt("How much was your meal?"));
+  var taxRate = parseFloat(prompt("What is the tax rate?"));
+  var tipPercent = parseFloat(prompt("What percentage would you like to tip?"));
+
+  //calculate 
+  var tax = cost * (taxRate / 100);
 	console.log (tax);
 
-  var tip = parseFloat(cost) * (parseFloat(tipPercent) / 100);
+  var tip = cost * (tipPercent / 100);
   console.log (tip);
 
-  var total = parseFloat(cost) + parseFloat(tax) + parseFloat(tip);
+  var total = cost + tax + tip;
 	console.log (total);
 
+  // message
   alert("meal: $" + (cost) + "\n" + "tax: $" + (tax).toFixed(2) + "\n" + tipPercent + "% tip: $" + (tip).toFixed(2) + "\n" +"___________________________" + "\n" + "total: $" + (total).toFixed(2) ); 
+
+}
