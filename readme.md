@@ -1,1 +1,3 @@
-Thinkful Tip Calculator Project
+Tip Calculator Project
+
+Thinkful Node.js - assignment 1
